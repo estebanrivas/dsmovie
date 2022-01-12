@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
+    import {ReactComponent as GithubIcon} from './assets/img/github.svg'
     "target": "es5",
     "lib": [
       "dom",
