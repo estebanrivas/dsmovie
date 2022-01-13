@@ -41,9 +41,8 @@ function Form() {
             </button>
           </div>
         </form>
-        <Link to="/">
-          <button className="btn btn-primary dsmovie-btn mt-3">Cancelar</button>
-        </Link>
+        <Link to=""></Link>
+        <button className="btn btn-primary dsmovie-btn mt-3">Cancelar</button>
       </div>
     </div>
   );
