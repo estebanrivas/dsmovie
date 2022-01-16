@@ -1,6 +1,6 @@
 import FormCard from "components/FormCard";
-import { useParams } from "react-router-dom";
-
+import { Link, useParams } from "react-router-dom";
+import { Movie } from "types/movies";
 
 function Form() {
   const params = useParams();
