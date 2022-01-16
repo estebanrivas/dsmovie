@@ -1,0 +1,1 @@
+export const BASE_URL = process.env.REAC "http://localhost:8080";

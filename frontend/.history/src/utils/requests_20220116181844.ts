@@ -1,0 +1,1 @@
+export const BASE_URL = proces "http://localhost:8080";
