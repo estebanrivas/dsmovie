@@ -4,7 +4,7 @@ import "./styles.css";
 type Props = {
   score: number;
   count: number;
-}
+};
 
 function MovieScore({ score, count }: Props) {
   return (
