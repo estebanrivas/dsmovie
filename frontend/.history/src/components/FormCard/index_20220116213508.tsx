@@ -1,17 +1,19 @@
-import axios, { AxiosRequestConfig } from "axios";
+import axios, { AxiosRequestConfig} from "axios";
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Movie } from "types/movies";
 import { BASE_URL } from "utils/requests";
 import { validateEmail } from "utils/validate";
 import "./styles.css";
+
 
 type Props = {
   movieId: string;
 };
 
 function FormCard({ movieId }: Props) {
-  const navigate = useNavigate();
+
+  const navigate = useNavigate
 
   const [movie, setMovie] = useState<Movie>();
 
@@ -33,18 +35,18 @@ function FormCard({ movieId }: Props) {
 
     const config: AxiosRequestConfig = {
       baseURL: BASE_URL,
-      method: "PUT",
-      url: "/scores",
+      method: 'PUT',
+      url: '/scores',
       data: {
         email: email,
         movieId: movieId,
-        score: score,
-      },
-    };
+        score: score
+      }
+    }
 
-    axios(config).then((response) => {
-      navigate("/");
-    });
+    axios(config).then(response => {
+      console.log(response.data);
+    })
   };
 
   return (
